@@ -1,14 +1,9 @@
 'use strict';
-import React, { Component } from "react";
+import { connect } from "react-redux";
+import Weathermap from "../components/Weathermap";
 
-class Weathermap extends Component {
-    render() {
-        return (
-            <div>
-                Hellow from Weathermap Application!
-            </div>
-        );
-    }
-}
+const mapStateToprops = (state) => ({
+    weathermap : state.weathermap
+});
 
-export default Weathermap;
+export default connect(mapStateToprops)(Weathermap);

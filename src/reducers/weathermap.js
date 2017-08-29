@@ -1,4 +1,6 @@
 'use strict';
+import * as type from "../constants/weathermap";
+
 const initialState = {
 
 };
