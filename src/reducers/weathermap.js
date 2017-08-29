@@ -6,7 +6,15 @@ const initialState = {
 };
 
 const weathermap = (state = initialState, action) => {
-    return state;
+  /*switch(action.type) {
+    case type.FETCH_WEATHER_REQUEST :
+        return state;
+    case type.FETCH_WEATHER_FAILURE :
+        return state;
+    case type.FETCH_WEATHER_SUCCESS :
+        return state;
+    default :*/
+      return state;
 };
 
 export default weathermap;
