@@ -29,8 +29,9 @@ export const fetchWeatherEpic = action$ =>
           responseType: 'json',
         })
         .map(response => {
-              console.log(response.status);
-              return receiveWeatherRequest(response);
+              if (response.status == 200) {
+                  return receiveWeatherRequest(response.response);
+              }
         })
         .takeUntil(action$.ofType(type.FETCH_WEATHER_REQUEST))
         .catch(error => Observable.of(
