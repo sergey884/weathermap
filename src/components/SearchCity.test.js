@@ -3,7 +3,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import SearchCity from './SearchCity';
 
-describe('participation button component', () => {
+describe('Testing SearchCity component', () => {
     let props, wrapper;
 
     beforeEach(() => {
@@ -15,7 +15,7 @@ describe('participation button component', () => {
     });
 
     it('should contain input(type text)', () => {
-        expect(wrapper.find('#search').length).toEqual(1);
+        expect(wrapper.find('input').length).toEqual(1);
     });
 
 });
