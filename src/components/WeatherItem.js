@@ -8,6 +8,7 @@ class WeatherItem extends Component {
     }
 
     render() {
+        console.log("render");
         const { description, property } = this.props;
         return (
             <div>

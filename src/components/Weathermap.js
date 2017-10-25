@@ -5,6 +5,14 @@ import WeatherInfo from './WeatherInfo';
 import PropTypes from 'prop-types';
 
 class Weathermap extends Component {
+    constructor(props) {
+      super(props);
+    }
+
+    componentWillReceiveProps(nextProps) {
+      console.log("componentWillReceiveProps", nextProps);
+    }
+    
     render() {
       const {
           weathermap ,

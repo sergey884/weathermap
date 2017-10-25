@@ -1,7 +1,7 @@
 'use strict';
 import React from 'react';
 import { shallow } from 'enzyme';
-import SearchCity from './SearchCity';
+import SearchCity from '<components>/SearchCity';
 
 describe('Testing SearchCity component', () => {
     let props, wrapper;

@@ -11,9 +11,9 @@ const epicMiddleware = createEpicMiddleware(rootEpic);
 const middleware = [ thunk, epicMiddleware ];
 
 if (process.env.NODE_ENV === 'development') {
-    const logger = createLogger();
+/*    const logger = createLogger();
     middleware.push(logger);
-}
+*/}
 
 const configureStore = () => {
     const store = createStore(

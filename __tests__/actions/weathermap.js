@@ -1,10 +1,10 @@
 'use strict';
 import configureMockStore from 'redux-mock-store'
-import * as actions from './weathermap'
-import * as types from '../constants/weathermap'
+import * as actions from '<actions>/weathermap'
+import * as types from '<constants>/weathermap'
 import nock from 'nock'
 import { createEpicMiddleware } from 'redux-observable';
-import { rootEpic } from '../reducers/index';
+import { rootEpic } from '<reducers>/index';
 
 const epicMiddleware = createEpicMiddleware(rootEpic);
 
